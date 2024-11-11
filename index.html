@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storytelling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Storytelling</h1>
+        <div id="world-state" class="box">
+            <h2>World State</h2>
+            <p id="world-state-content">Loading...</p>
+        </div>
+        <div id="narration" class="box">
+            <h2>Narration</h2>
+            <p id="narration-content">Loading...</p>
+        </div>
+        <div id="user-input" class="box">
+            <h2>Enter Your Action</h2>
+            <input type="text" id="input-action" placeholder="Enter your action here">
+            <button id="submit-action">Submit</button>
+        </div>
+        <div id="predicted-outcomes" class="box">
+            <h2>Predicted Outcomes</h2>
+            <p id="predicted-outcomes-content">Loading...</p>
+        </div>
+        <div id="predicted-narration" class="box">
+            <h2>Predicted Narration</h2>
+            <p id="predicted-narration-content">Loading...</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
